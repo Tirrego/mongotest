@@ -13,7 +13,7 @@ const InputForm = ({ onAdd, darkmode }) => {
   const SaveData = async (e) => {
     e.preventDefault();
 
-    await fetch("http://localhost:3000/api/todo", {
+    await fetch("/api/todo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const TodoForm = ({ todos, onAdd, darkmode }) => {
   const DeleteTodo = async (id) => {
-    await fetch("http://localhost:3000/api/todo", {
+    await fetch("/api/todo", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
