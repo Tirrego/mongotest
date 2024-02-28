@@ -7,7 +7,7 @@ const Form = ({darkmode}) => {
     const [todos, setTodos] = useState([])
 
     const GetData = async () => {
-        const res = await fetch("http://localhost:3000/api/todo");
+        const res = await fetch("api/todo");
         const daten = await res.json();
         setTodos(daten);
       };
